@@ -1,0 +1,20 @@
+import { AnalyticsResponseSchema, TransactionsResponseSchema } from "./schemas"
+
+export async function getSalesByDate(date: string) {
+    
+    const url = `${process.env.NEXT_PUBLIC_DOMIAN}/admin/sales/api?transactionDate=${date}`
+    const req = await fetch(url)
+    const json = await req.json()
+
+    const transactions = TransactionsResponseSchema.parse(json)
+    return transactions
+}
+
+export async function getAnalytics() {
+    const url = `${process.env.NEXT_PUBLIC_DOMIAN}/admin/dashboard/api`
+    const req = await fetch(url)
+    const json = await req.json()
+
+    const analytics = AnalyticsResponseSchema.parse(json)
+    return analytics
+}
