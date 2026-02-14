@@ -87,7 +87,7 @@ Crea un archivo `.env.local` en la raíz del frontend con:
 ```bash
 API_URL=http://localhost:3000
 NEXT_PUBLIC_API_URL=http://localhost:3000
-NEXT_PUBLIC_DOMIAN=http://localhost:3001
+NEXT_PUBLIC_DOMAIN=http://localhost:3001
 ```
 
 > `API_URL` se usa en Server Components/Actions. `NEXT_PUBLIC_API_URL` en componentes client.
