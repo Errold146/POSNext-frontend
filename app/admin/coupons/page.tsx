@@ -3,6 +3,8 @@ import { Metadata } from "next"
 
 import { Heading } from "@/components/ui"
 import { CouponsTable } from "@/components/coupons"
+
+export const dynamic = 'force-dynamic'
 import { CouponsAdminResponseSchema } from "@/src/schemas"
 
 export const metadata: Metadata = {

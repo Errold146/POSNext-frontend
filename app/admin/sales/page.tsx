@@ -3,6 +3,8 @@ import { format } from "date-fns";
 import { QueryClient, dehydrate, HydrationBoundary } from "@tanstack/react-query";
 
 import { Heading } from "@/components/ui";
+
+export const dynamic = 'force-dynamic'
 import { getSalesByDate } from "@/src/api";
 import { TransactionFilter } from "@/components/transactions";
 

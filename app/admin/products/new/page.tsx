@@ -3,6 +3,8 @@ import { Metadata } from "next";
 
 import { Heading } from "@/components/ui";
 import { AddProductForm } from "@/components/products";
+
+export const dynamic = 'force-dynamic'
 import { CategoriesResponseSchema } from "@/src/schemas";
 
 async function getCategories() {

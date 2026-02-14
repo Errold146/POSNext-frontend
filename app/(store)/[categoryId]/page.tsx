@@ -2,6 +2,8 @@ import { CategoryWithProductsResponseSchema } from "@/src/schemas"
 import { ProductCard } from "@/components/products"
 import { notFound } from "next/navigation"
 
+export const dynamic = 'force-dynamic'
+
 type Params = Promise<{categoryId: string}>
 
 async function getProducts(categoryId: string) {

@@ -3,6 +3,8 @@ import { Metadata } from "next"
 import { notFound } from "next/navigation"
 
 import { Heading } from "@/components/ui"
+
+export const dynamic = 'force-dynamic'
 import { EditCouponForm } from "@/components/coupons"
 import { CouponAdminSchema } from "@/src/schemas"
 

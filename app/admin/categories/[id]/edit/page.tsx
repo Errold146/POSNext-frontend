@@ -3,6 +3,8 @@ import { Metadata } from "next"
 import { notFound } from "next/navigation"
 
 import { Heading } from "@/components/ui"
+
+export const dynamic = 'force-dynamic'
 import { EditCategoryForm } from "@/components/categories"
 import { CategorySchema } from "@/src/schemas"
 

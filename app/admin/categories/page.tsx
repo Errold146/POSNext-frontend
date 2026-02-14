@@ -3,6 +3,8 @@ import { Metadata } from "next"
 
 import { Heading } from "@/components/ui"
 import { CategoriesTable } from "@/components/categories"
+
+export const dynamic = 'force-dynamic'
 import { CategoriesResponseSchema } from "@/src/schemas"
 
 export const metadata: Metadata = {
